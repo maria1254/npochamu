@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共通の空きコマ検索</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="npo.PNG" alt="んぽちゃむ" class="npochamu-image">
+        <h1>んぽちゃむと遊べる空きコマ探し</h1>
+        <h3>じかんわりいれてほしいちゃむ ❣</h3>
+        <br></br>
+
+        <div class="form-section">
+            <label for="numStudents">んぽちゃむのともだち：</label>
+            <select id="numStudents" onchange="generateTimetableForm()">
+                <option value="1">1人</option>
+                <option value="2">2人</option>
+                <option value="3">3人</option>
+                <option value="4">4人</option>
+                <option value="5">5人</option>
+                <option value="6">6人</option>
+                <option value="7">7人</option>
+                <option value="8">8人</option>
+                <option value="9">9人</option>
+                <option value="10">10人</option>
+            </select>
+        </div>
+
+        <div id="timetable-forms" class="form-container"></div>
+
+        <button type="button" class="submit-btn">ぽちっと</button>
+
+        <div id="result" class="result-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
